@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scoop News — Home</title>
+  <meta name="description" content="Scoop News — Pakistan style news portal (English + Urdu)" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <!-- Urdu Nastaleeq (fallback if available) -->
+  <link href="https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- TOP HEADLINE TICKER -->
+  <div class="top-ticker" id="ticker">
+    <div class="ticker-inner" id="tickerInner">
+      <span class="tick-item">Breaking: New policy announced by the government.</span>
+      <span class="tick-item">Tech: Major AI update reshapes developer tools.</span>
+      <span class="tick-item">Sports: National team clinches victory in final.</span>
+      <span class="tick-item">Business: Markets rally after positive jobs report.</span>
+    </div>
+    <div class="lang-switch">
+      <button id="langEn" class="lang-btn active" data-lang="en">English</button>
+      <button id="langUr" class="lang-btn" data-lang="ur">اردو</button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo: Globe + Newspaper icons combined in SVG -->
+      <a href="index.html" class="brand">
+        <!-- Globe icon -->
+        <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="10" cy="12" r="6" stroke="#c41230" stroke-width="1.6" fill="none"></circle>
+          <path d="M2 12h16" stroke="#c41230" stroke-width="1.4" fill="none"></path>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-en">Scoop News</span>
+          <span class="brand-ur" lang="ur" dir="rtl" style="display:none">اسکوپ نیوز</span>
+        </span>
+      </a>
+
+      <button id="menuToggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav class="site-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+          <li><a href="business.html">Business</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <a class="eyebrow" data-lang-en="Featured" data-lang-ur="نمایاں">Featured</a>
+        <h1 class="hero-title" data-lang-en="Major Security Update: What It Means" data-lang-ur="اہم سیکیورٹی اپڈیٹ: اس کا مطلب کیا ہے؟">
+          Major Security Update: What It Means
+        </h1>
+        <p class="hero-excerpt" data-lang-en="A short summary of the featured story — updated analysis and expert comments." data-lang-ur="نمایاں خبر کا مختصر خلاصہ — تجزیہ اور ماہرین کی رائے۔">
+          A short summary of the featured story — updated analysis and expert comments.
+        </p>
+        <div class="meta">By Admin • Oct 25, 2025</div>
+      </div>
+      <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80&auto=format&fit=crop" alt="Featured image">
+      </div>
+    </section>
+
+    <!-- LATEST GRID -->
+    <section class="latest container">
+      <h2 data-lang-en="Latest" data-lang-ur="تازہ ترین">Latest</h2>
+      <div class="grid grid-3">
+        <!-- card 1 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1509223197845-458d87318791?w=800&q=60&auto=format&fit=crop" alt="">
+          <div class="card-body">
+            <a class="tag" href="#">Tech</a>
+            <h3><a href="article.html" data-lang-en="AI Tools Changing the Workplace" data-lang-ur="AI ٹولز جو ورک پلیس بدل رہے ہیں">AI Tools Changing the Workplace</a></h3>
+            <div class="meta">Oct 22, 2025</div>
+          </div>
+        </article>
+
+        <!-- card 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800&q=60&auto=format&fit=crop" alt="">
+          <div class="card-body">
+            <a class="tag" href="#">Business</a>
+            <h3><a href="article.html" data-lang-en="Markets react to new policy" data-lang-ur="بازار نئی پالیسی پر ردِ عمل دکھاتے ہیں">Markets react to new policy</a></h3>
+            <div class="meta">Oct 24, 2025</div>
+          </div>
+        </article>
+
+        <!-- card 3 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1564869735320-4388fed6f19c?w=800&q=60&auto=format&fit=crop" alt="">
+          <div class="card-body">
+            <a class="tag" href="#">Sports</a>
+            <h3><a href="article.html" data-lang-en="National team wins final" data-lang-ur="قومی ٹیم نے فائنل جیت لیا">National team wins final</a></h3>
+            <div class="meta">Oct 20, 2025</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTENT + SIDEBAR -->
+    <section class="content container">
+      <div class="main-col">
+        <h2 data-lang-en="Featured Stories" data-lang-ur="نمایاں کہانیاں">Featured Stories</h2>
+
+        <article class="list-item">
+          <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=600&q=60&auto=format&fit=crop" alt="">
+          <div>
+            <a class="tag" href="#">Health</a>
+            <h3><a href="article.html" data-lang-en="10 tips for better sleep" data-lang-ur="بہتر نیند کے 10 مشورے">10 tips for better sleep</a></h3>
+            <p class="meta">Oct 19, 2025</p>
+            <p class="excerpt" data-lang-en="Short excerpt for the story..." data-lang-ur="کہانی کا مختصر اقتباس...">Short excerpt for the story...</p>
+          </div>
+        </article>
+
+      </div>
+
+      <aside class="sidebar">
+        <div class="widget">
+          <h3 data-lang-en="Popular" data-lang-ur="مقبول">Popular</h3>
+          <ul class="popular">
+            <li><a href="article.html">How to save more this year</a></li>
+            <li><a href="article.html">Top 10 mobile apps 2025</a></li>
+            <li><a href="article.html">Healthy foods to try</a></li>
+          </ul>
+        </div>
+
+        <div class="widget">
+          <h3 data-lang-en="Subscribe" data-lang-ur="سبسکرائب کریں">Subscribe</h3>
+          <form id="subscribeForm" class="subscribe">
+            <input type="email" placeholder="Email address" required>
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <span data-lang-en>Scoop News</span><span data-lang-ur style="display:none">اسکوپ نیوز</span>. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html" data-lang-en>Privacy</a>
+        <a href="contact.html" data-lang-en>Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
